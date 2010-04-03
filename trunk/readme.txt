@@ -32,8 +32,8 @@ If there is no JavaScript, the user is taken to a page on the site using an empt
 
 = References =
 1. See particularly '508' legislation in America.
-2. Original description on [A List Apart](http://www.alistapart.com/articles/gracefulemailobfuscation "A List Apart: Graceful Email Obfuscation").
-3. [Drupal plugin](http://drupal.org/project/geo_filter)
+1. Original description on [A List Apart](http://www.alistapart.com/articles/gracefulemailobfuscation "A List Apart: Graceful Email Obfuscation").
+1. [Drupal plugin](http://drupal.org/project/geo_filter)
 
 Further reading:
 

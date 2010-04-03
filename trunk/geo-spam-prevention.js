@@ -1,7 +1,7 @@
 var $j = jQuery.noConflict();
 $j('document').ready(function()
 {
-    eLinks = $j('a.geo-email');
+    eLinks = $j('a.geo-address');
     eLinks.each(function(){
         eLink = $j(this);
         str = eLink.attr('href').replace(/.*=/,'')
