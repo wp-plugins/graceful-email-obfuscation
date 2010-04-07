@@ -28,7 +28,7 @@ The most viable alternative methods are:
 1. Using XML comments or CSS `display: none;` to remove elements inside the link text. There is still no clickable link, which makes it hard for the blind to use.
 
 = JavaScript fallback =
-If there is no JavaScript, the user is taken to a page on the site using an empty content box where they are asked a simple text question to check whether they are a human. Basic sums are asked at the moment, though a wider range of questions could be added using the [http://testCAPTCHA.com](testCAPTCHA.com) service.
+If there is no JavaScript, the user is taken to a page on the site using an empty content box where they are asked a simple text question to check whether they are a human. Basic sums are asked at the moment, though a wider range of questions could be added using the [testCAPTCHA.com](http://testCAPTCHA.com) service.
 
 = References =
 1. See particularly '508' legislation in America.
@@ -39,6 +39,8 @@ Further reading:
 
 1. [GEO review](http://technology.kencarlson.org/general/graceful-e-mail-obfuscation/) by Ken Carlson
 1. Spam obfuscation comparison recommending use of this method for 508 compliance: [.eduGuru article](http://doteduguru.com/id415-e-mail-obfuscation.html) by Michael Fienen
+
+**Some notes and future details on [my site](http://www.nicholaswilson.me.uk/2010/04/notes-on-good-email-obfuscation/)**
 
 == Installation ==
 
