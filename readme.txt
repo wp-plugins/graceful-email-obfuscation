@@ -9,6 +9,8 @@ Simple, highly secure email obfuscation. In brief: always get a clickable link a
 
 == Description ==
 
+=Please note: fallback with no JS only works neatly with a static front page=
+
 Hiding email addresses from spammers has a long history. There are some obvious golden goals, like making the process seamless to your visitors, and be practicable to implement. The one that often gets left out is accessibility, but in some areas this is actually a legal requirement.[1]
 
 = The method =

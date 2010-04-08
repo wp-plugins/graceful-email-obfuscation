@@ -4,6 +4,10 @@ Plugin Name: Graceful Email Obfuscation
 Description: An email obfuscator to prevent spam, using Roel Van Gils' method, GEO. In brief: there is always a clickable, copyable link at the end for the user; transparently if JavaScript is enabled, and links are (so far) impossible to harvest.
 Version: 0.1.1
 Author: Nicholas Wilson
+
+Copyright: Nicholas Wilson, 2010
+Licence: GPL v.2
+
 */
 
 add_shortcode('email','geo_emailshortcode');
