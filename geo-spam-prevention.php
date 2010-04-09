@@ -100,7 +100,7 @@ function geo_content_replace($content) {
             $imported = $doc->importNode($geo_rep->documentElement->childNodes->item(1)->childNodes->item(0), TRUE);
             $el->appendChild($imported);
 
-            $insert = $doc->saveXML();
+            $insert = $doc->saveXML($doc->documentElement, LIBXML_NOEMPTYTAG);
             $insert = explode('</body>', $insert);
             $insert = $insert[0];
             $insert = explode('</head>', $insert);
