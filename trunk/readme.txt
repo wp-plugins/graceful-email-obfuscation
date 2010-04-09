@@ -9,8 +9,6 @@ Simple, highly secure email obfuscation. In brief: always get a clickable link a
 
 == Description ==
 
-=Please note: fallback with no JS only works neatly with a static front page=
-
 Hiding email addresses from spammers has a long history. There are some obvious golden goals, like making the process seamless to your visitors, and be practicable to implement. The one that often gets left out is accessibility, but in some areas this is actually a legal requirement.[1]
 
 = The method =
@@ -64,10 +62,15 @@ Or, an alternate link text can be provided by using `href`:
 
 Further, any `style` or `class` attributes used on `[email]` get passed down to the `<a>` element generated, which also has the `geo-address` class added to it for styling your email links.
 
-== Changelog ==
+= JavaScript fallback styling =
+The plugin grabs the frontpage and uses it to to display the CAPTCHA. The actual page layout is highly dependent on the theme, so the plugin applies a fairly standard heuristic, putting its content inside any div with id main or content, or role main. That covers pretty much all themes. If the auto-detection does not work, the whole page is replaced instead. The upshot is that it should function fine, but may mess up the style if various wrappers or complex CSS rules are used in the theme.
 
-= 0.2 potential plans =
+== Changelog ==
+= 0.3 potential plans =
 The choice of human-accessible questions could be opened up. A page scanner to avoid the use of shortcodes could be offered.
+
+= 0.2 =
+A fairly hefty change to the way the CAPTCHA is placed on the frontpage. I had made a bad assumption about how a WP hook worked, and rectifying it required engineering a vastly more fiddly piece of apparatus requiring parsing and fiddling with the document. It ought to be as close to bullet-proof as can be, much better the regular expressions.
 
 = 0.1 =
 First release
