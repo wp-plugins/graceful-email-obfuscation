@@ -1,8 +1,8 @@
 === Graceful Email Obfuscation ===
-Contributors: nicholaswilson
+Contributors: nicholaswilson, jasonhendriks
 Tags: spam, email
 Requires at least: 2.8
-Tested up to: 2.9
+Tested up to: 4.2
 Stable tag: trunk
 
 Simple, highly secure email obfuscation. In brief: always get a clickable link at the end for the user. The JavaScript fallback is fully accessible.
