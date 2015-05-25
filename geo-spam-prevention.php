@@ -12,9 +12,14 @@ Licence: GPL v.2
 
 add_shortcode('email','geo_emailshortcode');
 add_action('init','geo_hijackemailload');
-wp_register_script('geo-spam-prevention',plugin_dir_url(__FILE__).'geo-spam-prevention.js',
-                array('jquery'), 0.1);
-wp_enqueue_script('geo-spam-prevention');
+add_action( 'wp_enqueue_scripts', 'geo_spam_prevention_enqueue_scripts' );
+
+/**
+ * Enqueues the Javascript for the public pages
+ */
+function geo_spam_prevention_enqueue_scripts() {
+	wp_enqueue_script('geo-spam-prevention',plugin_dir_url(__FILE__).'geo-spam-prevention.js', array('jquery'), 0.1);
+}
 
 function geo_hijackemailload() {
     if (isset($_GET['geo-address'])) {
