@@ -1,9 +1,9 @@
 === Graceful Email Obfuscation ===
 Contributors: nicholaswilson, jasonhendriks
-Tags: spam, email
+Tags: spam, email, obfuscate
 Requires at least: 2.8
 Tested up to: 4.2
-Stable tag: 0.2.1
+Stable tag: 0.2.2
 
 Simple, highly secure email obfuscation. In brief: always get a clickable link at the end for the user. The JavaScript fallback is fully accessible.
 
