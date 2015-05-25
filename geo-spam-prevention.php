@@ -85,7 +85,7 @@ function geo_content_replace($content) {
     //Very grunky, but only way to get PHP DOM to read in UTF-8
     $html_meta = '<html><head><meta http-equiv="content-type" content="text/html; charset=utf-8"></head>';
     $content = "$html_meta$content</html>";
-    if ($doc->loadHTML($content)) {
+    if (@$doc->loadHTML($content)) {
         $xpath = new DOMXPath($doc);
         $el = $xpath->query('//div[@id=\'content\'] | //div[@role=\'main\']');
         if ($el->length == 0) $el = $xpath->query('//div[@id=\'main\']');
