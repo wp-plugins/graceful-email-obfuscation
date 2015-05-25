@@ -3,7 +3,7 @@ Contributors: nicholaswilson, jasonhendriks
 Tags: spam, email
 Requires at least: 2.8
 Tested up to: 4.2
-Stable tag: trunk
+Stable tag: 0.2.1
 
 Simple, highly secure email obfuscation. In brief: always get a clickable link at the end for the user. The JavaScript fallback is fully accessible.
 
